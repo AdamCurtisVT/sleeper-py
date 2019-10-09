@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="sleeper_py",
-    version="0.0.1-beta8",
+    version="0.0.1-beta9",
     author="Adam Curtis",
     author_email="adamcurtisvt@gmail.com",
     description="A python implementation of the Sleeper.app API",
