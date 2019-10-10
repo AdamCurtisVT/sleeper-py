@@ -211,6 +211,7 @@ class Stat(object):
         self.Season = season
         self.Week = week
         self.Id = playerId
+        
         if 'blk_kick' in jsonText:
             self.BlockedKicks = jsonText['blk_kick']
         if 'bonus_pass_cmp_25' in jsonText:
