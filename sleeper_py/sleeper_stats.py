@@ -205,6 +205,17 @@ class Stat(object):
     YardsAllowed_450_499 = None
     YardsAllowed_500_549 = None
     YardsAllowed_550p = None
+    IdpTackleSolo = None
+    IdpTackleLoss = None
+    IdpTackleAssist = None
+    IdpTackle = None
+    IdpSack = None
+    IdpQbHit = None
+    IdpPassDefended = None
+    IdpInterception = None
+    IdpFumbleRecovered = None
+    IdpForcedFumble = None
+    IdpDefensiveSnap = None
 
     # Initializes a new instance of the Stat class.
     def __init__(self, season, week, playerId, jsonText):
@@ -590,6 +601,28 @@ class Stat(object):
             self.YardsAllowed_500_549 = jsonText['yds_allow_500_549']
         if 'yds_allow_550p' in jsonText:
             self.YardsAllowed_550p = jsonText['yds_allow_550p']
+        if 'idp_tkl_solo' in jsonText:
+            self.IdpTackleSolo = jsonText['idp_tkl_solo']
+        if 'idp_tkl_loss' in jsonText:
+            self.IdpTackleLoss = jsonText['idp_tkl_loss']
+        if 'idp_tkl_ast' in jsonText:
+            self.IdpTackleAssist = jsonText['idp_tkl_ast']
+        if 'idp_tkl' in jsonText:
+            self.IdpTackle = jsonText['idp_tkl']
+        if 'idp_sack' in jsonText:
+            self.IdpSack = jsonText['idp_sack']
+        if 'idp_qb_hit' in jsonText:
+            self.IdpQbHit = jsonText['idp_qb_hit']
+        if 'idp_pass_def' in jsonText:
+            self.IdpPassDefended = jsonText['idp_pass_def']
+        if 'idp_int' in jsonText:
+            self.IdpInterception = jsonText['idp_int']
+        if 'idp_fum_rec' in jsonText:
+            self.IdpFumbleRecovered = jsonText['idp_fum_rec']
+        if 'idp_ff' in jsonText:
+            self.IdpForcedFumble = jsonText['idp_ff']
+        if 'def_snp' in jsonText:
+            self.IdpDefensiveSnap = jsonText['def_snp']
 
 # -------------------------------------------------
 # Functions
