@@ -4,4 +4,4 @@ from .leagues import Leagues
 from .players import Players 
 from .user import User
 
-__version__ = "0.1.0"
+__version__ = "1.0.0"
