@@ -17,10 +17,7 @@ class Players():
         response = requests.get(endpoint)
     
         if response.status_code == 200:
-            players = list()
-            for player in response.json():
-                players.append(player)
-            return players
+            return response.json()
         else:
             return None
 
@@ -40,9 +37,7 @@ class Players():
         response = requests.get(endpoint)
     
         if response.status_code == 200:
-            players = list()
-            for player in response.json():
-                players.append(player)
-            return players
+            return response.json()
         else:
             return None
+        

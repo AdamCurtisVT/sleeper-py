@@ -6,7 +6,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "sleeper-py"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Python implementation of the Sleeper API."
 readme = "README.md"
 authors = [{ name = "Adam Curtis", email = "adamcurtisvt@gmail.com" }]
